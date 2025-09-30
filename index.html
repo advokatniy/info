@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>моё портфолио</title>
+  <meta name="description" content="портфолио: обо мне, проекты и контакты">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">моё портфолио</h1>
+      <button class="burger" type="button" aria-label="открыть меню" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" class="site-nav" aria-label="Основная навигация">
+        <a href="#about">обо мне</a>
+        <a href="#skills">навыки</a>
+        <a href="#interests">интересы</a>
+        <a href="#projects">проекты</a>
+        <a href="#contact">контакты</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="переключить тему">🌓</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>обо мне</h2>
+        <div class="about-grid">
+          <div class="about-photo" aria-hidden="true">
+            <img src="https://media.discordapp.net/attachments/1093603136972791880/1422549165224755220/image.png?ex=68dd13a6&is=68dbc226&hm=c3347328ed23d412f204fa2a0b2ca05169a5d75bdab5897ab3c9b170c0a68b03&=&format=webp&quality=lossless&width=1384&height=778" alt="немоё фото" loading="lazy">
+          </div>
+          <div class="about-text">
+            <p>
+              прив! эт мой сайт!
+            </p>
+            <p>
+              в моём портфолио — проекты и коммерческие работы. ниже — некоторые из них.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="interests" class="section section-alt">
+      <div class="container">
+        <h2>интересы</h2>
+        <div class="interests-grid" role="list">
+          <div class="interest-card" role="listitem">
+            <div class="interest-icon" aria-hidden="true">🎨</div>
+            <div class="interest-title">рисование</div>
+          </div>
+          <div class="interest-card" role="listitem">
+            <div class="interest-icon" aria-hidden="true">📚</div>
+            <div class="interest-title">книги</div>
+          </div>
+          <div class="interest-card" role="listitem">
+            <div class="interest-icon" aria-hidden="true">🎧</div>
+            <div class="interest-title">музыка</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+      <div class="container">
+        <h2>отзывы</h2>
+        <div class="testimonials">
+          <div class="testimonials-track" aria-live="polite">
+            <figure class="testimonial-card">
+              <blockquote>
+                плохая работа! проект не выполнен в срок, общение грубое, результат не превзошёл ожидания.
+              </blockquote>
+              <figcaption>
+                <img class="avatar" src="https://i.pravatar.cc/80?img=12" alt="Аватар Николая">
+                <div class="author">
+                  <span class="name">Николай П.</span>
+                  <span class="role">продукт-менеджер</span>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial-card">
+              <blockquote>
+                слабый фронтенд: неаккуратный код, внимание к деталям и адаптивная верстка с багами.
+              </blockquote>
+              <figcaption>
+                <img class="avatar" src="https://i.pravatar.cc/80?img=32" alt="Аватар Алины">
+                <div class="author">
+                  <span class="name">Алина С.</span>
+                  <span class="role">тимлид</span>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial-card">
+              <blockquote>
+                ваще не вник в задачу и предложил ужасные UX‑решения. нерекомендую сотрудничество!
+              </blockquote>
+              <figcaption>
+                <img class="avatar" src="https://i.pravatar.cc/80?img=56" alt="Аватар Артёма">
+                <div class="author">
+                  <span class="name">Артём К.</span>
+                  <span class="role">основатель стартапа</span>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="testimonials-controls">
+            <button class="t-prev" aria-label="предыдущий отзыв" type="button">←</button>
+            <button class="t-next" aria-label="следующий отзыв" type="button">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>навыки</h2>
+        <div class="skills-grid" role="list">
+          <div class="skill-card" role="listitem">
+            <div class="skill-icon" aria-hidden="true">cc</div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">capcut</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="1">
+                <span class="skill-bar-fill" style="width:90%"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" role="listitem">
+            <div class="skill-icon" aria-hidden="true">#</div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">ничо не делание</span>
+                <span class="skill-level">100%</span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                <span class="skill-bar-fill" style="width:100%"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" role="listitem">
+            <div class="skill-icon" aria-hidden="true">🎨</div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">арты</span>
+                <span class="skill-level">35%</span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                <span class="skill-bar-fill" style="width:35%"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" role="listitem">
+            <div class="skill-icon" aria-hidden="true">py</div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">python</span>
+                <span class="skill-level">1%</span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                <span class="skill-bar-fill" style="width:1%"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" role="listitem">
+            <div class="skill-icon" aria-hidden="true">as</div>
+            <div class="skill-info">
+              <div class="skill-header">
+                <span class="skill-name">aseprite</span>
+                <span class="skill-level">10%</span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                <span class="skill-bar-fill" style="width:10%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>жоские проекты</h2>
+        <div class="projects-grid" role="list">
+          <article class="project-card" role="listitem">
+            <h3>трон без мутации</h3>
+            <p>япрошёл трон без мутации. ушло 76 забегов.</p>
+          </article>
+          <article class="project-card" role="listitem">
+            <h3>щя придумаю</h3>
+            <p>Краткое описание проекта. Ссылка и детали будут добавлены позже.</p>
+          </article>
+          <article class="project-card" role="listitem">
+            <h3>Проект 3</h3>
+            <p>Краткое описание проекта. Ссылка и детали будут добавлены позже.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>контакты</h2>
+        <div class="contact-grid">
+          <form class="contact-form" action="#" method="post" novalidate>
+            <div class="form-row">
+              <label for="name">имя</label>
+              <input type="text" id="name" name="name" placeholder="твоё имя" required>
+            </div>
+            <div class="form-row">
+              <label for="email">почта</label>
+              <input type="email" id="email" name="email" placeholder="name@example.com" required>
+            </div>
+            <div class="form-row">
+              <label for="message">сообщение</label>
+              <textarea id="message" name="message" rows="5" placeholder="опишите ваш запрос" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">отправить</button>
+          </form>
+
+          <div class="contact-aside">
+            <p>нада почту? напишите на <a href="mailto:aaaaaadvokat@gmail.com">example@mail.com</a>.</p>
+            <ul class="contact-list">
+              <li>linkedIn: <a href="#" rel="noopener">профиль</a></li>
+              <li>gitHub: <a href="#" rel="noopener">репозитории</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> клянусь не ии</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
